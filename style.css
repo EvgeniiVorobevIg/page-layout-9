@@ -74,6 +74,10 @@ body {
   background-color: whitesmoke;
 }
 
+.width-only {
+  width: 300px;
+}
+
 .wrapper {
   max-width: 1200px;
   display: -webkit-box;
@@ -150,7 +154,7 @@ body {
   width: 20px;
   height: 20px;
   display: block;
-  background: url(../img/phone-alt-solid.svg) no-repeat;
+  background: url(img/phone-alt-solid.svg) no-repeat;
   left: -25px;
 }
 
@@ -417,6 +421,7 @@ body {
 }
 
 .footer-block {
+  border: 1px solid #000;
   background: #4b4848;
   padding: 0 0 0 30px;
   display: -webkit-box;
@@ -533,7 +538,7 @@ body {
   left: 0;
   width: 35px;
   height: 35px;
-  background: url(../img/vk-brands.svg) no-repeat;
+  background: url(img/vk-brands.svg) no-repeat;
 }
 
 .footer-tel:before {
@@ -543,7 +548,7 @@ body {
   left: 0px;
   width: 30px;
   height: 30px;
-  background: url(../img/phone-alt-solid.svg) no-repeat;
+  background: url(img/phone-alt-solid.svg) no-repeat;
 }
 
 .footer-mail:before {
@@ -553,7 +558,7 @@ body {
   left: 0px;
   width: 30px;
   height: 30px;
-  background: url(../img/envelope-solid.svg) no-repeat;
+  background: url(img/envelope-solid.svg) no-repeat;
 }
 
 .blick-line-x-1 {
@@ -563,8 +568,8 @@ body {
   top: 80px;
   left: 800px;
   background: #000;
-  -webkit-animation: line-x 0.5s linear 1 alternate 3s forwards;
-          animation: line-x 0.5s linear 1 alternate 3s forwards;
+  -webkit-animation: line-x 0.5s linear 1 alternate 0s forwards;
+          animation: line-x 0.5s linear 1 alternate 0s forwards;
 }
 
 .blick-line-y-2 {
@@ -575,8 +580,8 @@ body {
   left: 120px;
   background: #000;
   opacity: 0;
-  -webkit-animation: line-y 0.5s linear 1 alternate 3.9s forwards;
-          animation: line-y 0.5s linear 1 alternate 3.9s forwards;
+  -webkit-animation: line-y 0.5s linear 1 alternate 0.9s forwards;
+          animation: line-y 0.5s linear 1 alternate 0.9s forwards;
 }
 
 .blick-line {
@@ -592,16 +597,16 @@ body {
   -webkit-filter: blur(2px);
           filter: blur(2px);
   top: 50px;
-  left: 370px;
+  left: 410px;
   z-index: 1;
-  -webkit-animation: blick 0.5s linear 1 alternate 3.5s forwards;
-          animation: blick 0.5s linear 1 alternate 3.5s forwards;
+  -webkit-animation: blick 0.5s linear 1 alternate 0.5s forwards;
+          animation: blick 0.5s linear 1 alternate 0.5s forwards;
 }
 
 .header-bot__button {
   opacity: 0;
-  -webkit-animation: button-header 0.4s linear 1 alternate 4.4s forwards;
-          animation: button-header 0.4s linear 1 alternate 4.4s forwards;
+  -webkit-animation: button-header 0.4s linear 1 alternate 1.4s forwards;
+          animation: button-header 0.4s linear 1 alternate 1.4s forwards;
 }
 
 .logo-square {
@@ -612,8 +617,8 @@ body {
   height: 30px;
   background-color: red;
   opacity: 0;
-  -webkit-animation: logo 0.4s linear 1 alternate 4.4s forwards;
-          animation: logo 0.4s linear 1 alternate 4.4s forwards;
+  -webkit-animation: logo 0.4s linear 1 alternate 1.4s forwards;
+          animation: logo 0.4s linear 1 alternate 1.4s forwards;
 }
 
 @-webkit-keyframes logo {
@@ -692,7 +697,7 @@ body {
 
 @-webkit-keyframes line-y {
   0% {
-    top: 66px;
+    top: 100px;
     opacity: 1;
   }
   50% {
@@ -705,7 +710,7 @@ body {
 
 @keyframes line-y {
   0% {
-    top: 66px;
+    top: 100px;
     opacity: 1;
   }
   50% {
@@ -925,7 +930,36 @@ body {
     transition: all 0.8s ease 0s;
   }
   .section-info-2__text-2 {
-    padding: 0 20px 0 0px;
+    padding: 0 20px 20px 0px;
+  }
+  .section-info-2 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 402px) {
+  .header-bot__button {
+    margin: 0 0px 20px 0px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    width: 298px;
+    position: static;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  .header-bot__button span {
+    color: #000;
+    font-size: 17px;
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background: red;
+    -webkit-box-shadow: -15px 15px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: -15px 15px 10px rgba(0, 0, 0, 0.3);
+    -webkit-transition: all 0.8s ease 0s;
+    transition: all 0.8s ease 0s;
   }
 }
 /*# sourceMappingURL=style.css.map */
