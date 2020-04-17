@@ -1220,7 +1220,7 @@ body.lock {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    max-width: 90%;
+    max-width: 100%;
     position: relative;
     right: 60px;
     -webkit-transition: all 0.3s ease 0s;
