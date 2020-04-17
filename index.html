@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <script src="https://kit.fontawesome.com/4d22968dc4.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="scss/style.css">
     <title>Document</title>
     <meta name="viewport" content="width=device-width user-scalable=no">
 </head>
@@ -62,7 +62,6 @@
                         <li>МОР</li>
                         <li>Надежность машин</li>
                         <li>Начертательная геометрия и инженерная графика</li>
-                        <li>Отчеты по практике</li>
                     </ul>
                 </div>
             </div>
@@ -90,8 +89,32 @@
         <div class="wrapper">
             <div class="restricted-line-1"> </div>
             <div class="footer-block">
+                <div class="footer-form">
+                    <form action="#" method="post" enctype="multipart/form-data">
+                        <div class="form__name"><input class="form-position" placeholder="Имя" type="text"
+                                name="username" value="" />
+                        </div>
+                        <div class="form__lastname"><input class="form-position" placeholder="Фамилия" type="text"
+                                name="username" value="" />
+                        </div>
+                        <div class="form__surename"><input class="form-position" placeholder="Отчество" type="text"
+                                name="username" value="" />
+                        </div>
+                        <div class="form__tel"><input class="form-position" placeholder="Телефон" type="tel"
+                                name="usertel" value="" /></div>
+                        <div class="form__secret-code"><input class="form-position" placeholder="Шифр" type="text"
+                                name="username" value="" /></div>
+                        <div class="form__button"><button><span>Отправить</span></button></div>
+                    </form>
+                </div>
                 <div class="footer-block__item-1">
-                    <div class="footer-block__title">Условия заказа</div>
+                    <div class="footer-block__title">
+                        <div class="footer-block__text-burger">Условия заказа</div>
+                        <div class="burger"><span></span>
+                            <div class="circle"></div>
+                        </div>
+
+                    </div>
                     <div class="restricted-bot"> </div>
                     <div class="footer-block__text">Для заказа работ нам от Вас необходимы :</div>
                     <ul class="footer-block__list">
@@ -107,7 +130,7 @@
                     </ul>
                 </div>
                 <div class="footer-block__item-2">
-                    <div class="footer-block__title">Почему заказать у нас:</div>
+                    <div class="footer-block__title-1">Почему заказать у нас:</div>
                     <div class="restricted-bot"> </div>
                     <ul class="footer-block__list-2">
                         <li>Осведомленность в программе обучения.</li>
@@ -123,7 +146,7 @@
                     </ul>
                 </div>
                 <div class="footer-block__item-3">
-                    <div class="footer-block__title">Гарантии:</div>
+                    <div class="footer-block__title-2">Гарантии:</div>
                     <div class="restricted-bot"> </div>
                     <p>мы <span>12 лет</span> на рынке в данной сфере, лишаться репутации из-за небольшой суммы денег не
                         рационально.
